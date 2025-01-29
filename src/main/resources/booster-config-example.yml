@@ -1,0 +1,72 @@
+# note: this is just an example, this will not be used by the plugin
+# create your own with the /axboosteradmin editor, just make sure to add your booster hook!
+#
+# DOCUMENTATION: https://docs.artillex-studios.com/axboosters.html
+# ITEM BUILDER: https://docs.artillex-studios.com/item-builder.html
+
+display-name: '&#FFDD00&l%multiplier% custom ʙᴏᴏsᴛᴇʀ'
+
+# the icon shown in guis
+icon:
+  type: PAPER
+
+# which plugins should this booster affect?
+# list of supported plugins: https://docs.artillex-studios.com/axboosters-supported-plugins.html#booster-hooks
+boosted:
+- myplugin:example_experience
+
+bossbar:
+  # set to false to disable
+  enabled: true
+  name:
+    # server booster
+    server: '%display_name% &#DDDDDD| &#FFFFFF%time_formatted%'
+    # player booster
+    player: '&f%player%&#FFDD00''s %display_name% &#DDDDDD| &#FFFFFF%time_formatted%'
+  color: YELLOW
+  style: NOTCHED_12
+
+# used when a player starts a booster
+player-booster:
+  start:
+  - ''
+  - '&f%player% &#00FF00has started a %display_name%&#00FF00!'
+  - '&#00DD00It ends in &f%time_formatted%&#00DD00!'
+  - '&#00FFcc&nClick here to thank them!'
+  - ''
+  end:
+  - ''
+  - '&f%player%''s &#FFDD00&l%display_name% &#FF0000has ended!'
+  - ''
+
+# used when the server starts a booster
+server-booster:
+  start:
+  - ''
+  - '&#00FF00A %display_name% &#00FF00has started!'
+  - '&#00DD00It ends in &f%time_formatted%&#00DD00!'
+  - ''
+  end:
+  - ''
+  - '&#FF0000A &#FFDD00&l%display_name% &#FF0000has ended!'
+  - ''
+
+starter:
+  enabled: true
+  material: BEACON
+  glow: true
+  name: '%display_name%'
+  lore:
+  - ' '
+  - '&#0099FFsᴛᴀᴛs'
+  - ' &8❙ &fAudience: &#0099FF%audience%'
+  - ' &8❙ &fMultiplier: &#0099FF%multiplier%'
+  - ' &8❙ &fLength: &#0099FF%length%'
+  - ' '
+  - '&#0099FFᴄʟɪᴄᴋ ᴛᴏ sᴛᴀʀᴛ'
+
+# if you want to override the format section in the guis, you can do it here!
+override-lore:
+  my-boosters: []
+  admin-viewer: []
+  active-boosters: []

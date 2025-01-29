@@ -1,0 +1,1 @@
+Full documentation: https://docs.artillex-studios.com/axboosters-adding-booster-hooks.html

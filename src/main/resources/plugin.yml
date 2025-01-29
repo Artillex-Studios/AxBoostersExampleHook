@@ -1,0 +1,8 @@
+name: AxBoostersExampleHook
+version: '1.0.0'
+main: com.artillexstudios.axboostersexamplehook.AxBoostersExampleHook
+api-version: '1.19'
+
+# make sure to add AxBoosters as a depend or softdepend
+depend:
+  - AxBoosters
