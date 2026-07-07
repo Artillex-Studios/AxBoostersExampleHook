@@ -2,9 +2,9 @@ package com.artillexstudios.axboostersexamplehook;
 
 import com.artillexstudios.axboosters.boosters.BoosterManager;
 import com.artillexstudios.axboosters.hooks.booster.BoosterHook;
-import com.artillexstudios.axboosters.libs.kyori.adventure.key.Key;
 import com.artillexstudios.axboosters.users.User;
 import com.artillexstudios.axboosters.users.UserList;
+import net.kyori.adventure.key.Key;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
